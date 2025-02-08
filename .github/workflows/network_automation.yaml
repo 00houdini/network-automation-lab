@@ -7,9 +7,9 @@ on:
     paths:
       - 'ansible/**'
       - '.github/workflows/network-automation.yaml'
-    schedule:
-      - cron "*/30 * * *"
-    workflow_dispatch:
+  schedule:
+    - cron "*/30 * * *"
+  workflow_dispatch:
 
 jobs:
   configure-network:
