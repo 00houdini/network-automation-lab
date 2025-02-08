@@ -12,7 +12,7 @@
     - name: Modify Router Banner
       ios_config:
         lines:
-          - banner motd ^ Router: {{ inventory_hostname }} ^
+          - banner motd ^ Router {{ inventory_hostname }} ^
 
     - name: Backup Running Config
       ios_config:
